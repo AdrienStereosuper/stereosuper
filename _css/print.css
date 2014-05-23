@@ -1,0 +1,364 @@
+/****************** COMMON ******************/
+
+html {
+	width:21cm;
+	margin: 0;
+	text-rendering: optimizeLegibility;
+	font-size:12pt;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+@page { margin: 0.5cm; }
+
+.clearing {
+	clear:both;
+	height:1px;
+}
+
+a, a:visited, a span, a:hover, a:hover span, a:active, a:active span {
+	color: #000;
+	text-decoration: none;
+}
+
+h1 {
+	margin:0;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 26pt;
+	line-height: 26pt;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 18pt;
+}
+
+/******************** STRUCTURE ********************/
+
+#navigation {
+	font-size:10pt;
+	background:#fff;
+	height:5.5cm;
+	line-height:13pt;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	border-bottom: 0.1cm solid #000;
+	width: 100%;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	z-index: 90;
+}
+#content {
+	background:#fff;
+	color: #000;
+	padding: 6.5cm 0 1cm 0;
+	margin-left: 0.2cm;
+}
+
+/**** LOGO ****/
+
+a#stereosuper {
+	width: 3.85cm;
+	text-align:center;
+	display:block;
+	color:#000;
+	text-decoration: none;
+	font-size: 13pt;
+	padding: 0;
+	margin: 0.65cm 0;
+	line-height:0.001cm;
+}
+a#stereosuper:before {
+	display:block;
+	width: 3.85cm;
+	height: 1.94cm;
+	margin: 0;
+	border:0 none;
+	content:url('../_images/_print/stereosuper.gif');
+	background: #fff;
+}
+
+a#stereosuper span {
+	display: none;
+}
+
+/**** COORDONNÉES ****/
+
+#address {
+	position: absolute;
+	top: 1cm;
+	left: 5.3cm;
+	margin:0 0.5cm;
+	width: 100%;
+	height: 8cm;
+	line-height:13pt;
+}
+
+#address address {
+	margin: 0 0 0.3cm 0;
+	font-style:normal;
+	line-height:13pt;
+}
+
+#address span#tel:before{
+	content:"www.stereosuper.fr";
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+#address a#mailStereosuper {
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/**** SOCIAL ****/
+
+#address ul#social {
+	border-top: 0.05cm solid #999;
+	padding-top: 0.3cm;
+	list-style-type: none;	
+	line-height:14pt;
+}
+
+#address ul#social li a {
+	color:#000;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+#address ul#social li a:after {
+	color:#000;
+	text-decoration:none;
+	content:" : "attr(href);
+	font-weight: normal;
+}
+
+/**** MENU ****/
+
+ul#menu {
+	display:none;
+}
+
+/******************** ACCUEIL ********************/
+
+#MovieBG,#flashmovie video, object#flashmovie,#pattern {
+	display:none
+}
+
+.home br {
+	display: none;
+}
+
+.home h2 {
+	padding:0.3cm 0 0.3cm 5.6cm;
+}
+
+.home p {
+	margin: 0;
+	padding: 0 0 0 5.6cm;
+}
+
+.home a {
+	color: #000;
+	text-decoration:none;
+}
+
+
+
+/******************** À PROPOS ********************/
+
+.aPropos h2 {
+	padding:0.2cm 0 0 5.6cm;
+	margin-bottom:0.2cm;
+}
+
+.aPropos, .aPropos a, .aPropos a span, .aPropos a:hover, .aPropos a:hover span,.aPropos a:active, .aPropos a:active span {
+	color :#000;
+	border-bottom:0 none;
+	text-decoration: none;
+}
+
+
+.aPropos h3#faireBeau {
+	font-size:14pt;
+	font-weight:normal;
+	padding:0 0 0.2cm 5.6cm;
+}
+
+.aPropos #stereosuperCompatible {
+	padding:0 0 0.2cm 5.6cm;
+}
+
+.aPropos #creativite {
+	page-break-after : always; 	
+	padding-top: 1cm;
+}
+
+.aPropos #icebergInvisible {
+	padding-top: 3cm;
+}
+
+.aPropos #creativite p, .aPropos #creativite h3 {
+	padding:0 0 0.2cm 5.6cm;
+}
+
+.aPropos #creativite img, .aPropos #icebergInvisible img {
+	display:none;
+}
+
+.aPropos #icebergInvisible p, .aPropos #icebergInvisible h3 {
+	padding:0 0 0.2cm 5.6cm;
+}
+
+.aPropos #daweb p, .aPropos #daweb h3 {
+	padding:0 0 0.2cm 5.6cm;
+}
+
+.aPropos #contact h3, .aPropos #contact a {
+	padding:1cm 0 0.2cm 5.6cm;
+}
+
+.aPropos #contact a {
+	text-decoration: none;
+	color: #000;
+}
+
+.aPropos #contact a:after {
+	font-weight: bold;
+	content:" contact@stereosuper.fr";
+}
+
+/******************** PORTFOLIO ********************/
+
+#content.portfolio {
+	position: relative;
+}
+
+.portfolio a, .portfolio a span,.portfolio a:visited,.portfolio a:active,.portfolio a:hover {
+	border:0 none;
+	color: #000;
+	text-decoration:none;
+}
+
+.portfolio #realisations a.accordionButton img, .portfolio #realisations a.accordionButton span,#navBtn,.portfolio .slideshowContener a.next, .portfolio .slideshowContener a.prec,.portfolio .accordionContent .legend a.visitWebsite, .datePortfolio, .slideshowImages li iframe, .slideshowImages li p {
+	display: none;
+	visibility: hidden;
+	background:transparent;
+}
+
+.portfolio .slideshowContener {
+	position: relative;	
+	width:617px;
+	float: right;
+}
+
+.portfolio ul {
+	list-style-type:none;	
+}
+
+.portfolio p, .portfolio h2, .portfolio h3 {
+	padding:0 0 0.2cm 5.6cm;
+}
+
+.portfolio a.accordionButton {
+	display: block;
+	font-size: 14pt;
+	padding: 0 0 0.2cm 5.1cm;
+	position: relative;
+}
+
+.portfolio a.accordionButton span{
+	position:absolute;
+	left: 0;
+	top: 0;
+}
+
+.portfolio a.accordionButton:before {
+	content:" —";
+}
+
+.portfolio h3, .portfolio p {
+	font-size: 12pt;	
+}
+
+.portfolio .accordionContent .legend a {
+	display:inline;
+}
+
+
+/******************** RÉFÉRENCES ********************/
+
+.references p, .references h2  {
+	padding:0 0 0.2cm 5.6cm;
+}
+
+.references #quotesStereo {
+	display: none;
+}
+
+.references #listeRefs {
+	float: right;
+	margin: 0 0 1cm 0;
+}
+
+.references #contact {
+	padding:1cm 0 0.2cm 5.6cm;	
+}
+
+.references #contact a {
+	color: #000;
+	text-decoration: none;
+}
+
+.references a#vous {
+	display: none;
+}
+
+.references #contact a:after {
+	font-weight: bold;
+	content:" contact@stereosuper.fr";
+}
+
+
+/******************** CONTACT ********************/
+
+.contactPage #formContact {
+	display: none;
+}
+
+.contactPage #mapContainer, .contactPage #map_canvas, .contactPage #map_canvas div {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.contactPage p, .contactPage h2 {
+	padding:0 0 0.2cm 5.6cm;
+}
+
+.contactPage #mapContainer {
+	float: right;
+}
+
+
+/******************** 404 ********************/
+
+.e404 h2, .e404 h3  {
+	padding:0 0 0.2cm 5.6cm;
+}
+
+/******************** ie6 ********************/
+
+.pageIe6 h2, .pageIe6 p  {
+	padding:0 0 0.2cm 5.6cm;
+}
