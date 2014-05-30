@@ -285,6 +285,9 @@ ul#menu li {
   position: relative;
   padding: 0;
 }
+ul#menu li.blueDash {
+  padding: 0 0 0 8px;
+}
 .lt-ie7 ul#menu li,
 .lt-ie7 ul#menu li a {
   margin: 0.1em 0 0 0;
