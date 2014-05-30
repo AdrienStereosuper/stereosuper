@@ -79,7 +79,7 @@ $(document).ready(function() {
 	}
 	
 	// snap btn sidebar responsive
-	var s = Snap("#svg-btn-responsive");
+	/*var s = Snap("#svg-btn-responsive");
 	var rect1 = s.rect(20, 20, 20, 3);
 	var rect2 = s.rect(20, 29, 20, 3);
 	var rect3 = s.rect(20, 38, 20, 3);
@@ -88,21 +88,25 @@ $(document).ready(function() {
 	rects.attr({
 	    fill: "#fff"
 	});
-	
+	//animation du btn svg
+	rect1.animate( { transform: "r-30,20,1" }, 300 );
+	*/
 	// sidebar
 	$('a#btn-sidebar').click(function() {
 		if($('#navigation').hasClass('open')){
 			$('#navigation').removeClass('open');
 			$('#content').removeClass('open');
+			TweenMax.to($("#svg-btn-responsive .rect1"), 0.3, {rotation: "0deg", x: "0", y: "0", ease:Cubic.easeInOut});
+			TweenMax.to($("#svg-btn-responsive .rect2"), 0.3, {opacity: "1", ease:Cubic.easeInOut});
+			TweenMax.to($("#svg-btn-responsive .rect3"), 0.3, {rotation: "0deg", x: "0", y: "0", ease:Cubic.easeInOut});
 		}else{
 			$('#navigation').addClass('open');
 			$('#content').addClass('open');
+			//TweenMax.to($("#svg-btn-responsive .group-rect"), 0.3, {x: "2px", ease:Cubic.easeInOut});
+			TweenMax.to($("#svg-btn-responsive .rect1"), 0.3, {delay:0.2, rotation: "45deg", x: "2px", y: "2px", ease:Cubic.easeInOut});
+			TweenMax.to($("#svg-btn-responsive .rect2"), 0.3, {delay:0.2, opacity: "0", ease:Cubic.easeInOut});
+			TweenMax.to($("#svg-btn-responsive .rect3"), 0.3, {delay:0.2, rotation: "-45deg", x: "-1px", y: "-1px", ease:Cubic.easeInOut});
 		}
-		//animation du btn svg
-		rect1.animate( { transform: "r-30,20,1" }, 300 );
-		/*tl = new TimelineLite();
-		tl.to($(".rect1", this), 0.3, {rotation: -30});
-		tl.to($(".rect3", this), 0.3, {rotation: 30});*/
 	});
 	
 	

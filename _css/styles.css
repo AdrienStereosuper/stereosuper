@@ -111,6 +111,24 @@ h1 {
   display: block;
   width: 60px;
   height: 60px;
+  text-align: center;
+}
+#navigation-responsive a#btn-sidebar svg#svg-btn-responsive .group-rect rect {
+  fill: #ffffff;
+}
+#navigation-responsive a#btn-sidebar svg#svg-btn-responsive .group-rect .rect1 {
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+#navigation-responsive a#btn-sidebar svg#svg-btn-responsive .group-rect .rect3 {
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
 }
 #content {
   width: 100%;

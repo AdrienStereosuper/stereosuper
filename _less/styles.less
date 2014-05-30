@@ -95,21 +95,36 @@ h1 { margin: 0 }
 	position: relative;
 	border-bottom:1px solid #222;
 	display: none;
-}
-#navigation-responsive a#btn-sidebar{
-	display: block;
-	height: 60px;
-	width: 60px;
-	background: none;
-	float: right;
-	border: none;
-	border-left: 1px solid #838382;
-}
-
-#navigation-responsive a#btn-sidebar svg#svg-btn-responsive{
-	display: block;
-	width: 60px;
-	height: 60px;
+	a#btn-sidebar{
+		display: block;
+		height: 60px;
+		width: 60px;
+		background: none;
+		float: right;
+		border: none;
+		border-left: 1px solid #838382;
+		svg#svg-btn-responsive{
+			display: block;
+			width: 60px;
+			height: 60px;
+			text-align: center;
+			.group-rect{
+				rect{
+					fill: @blanc;
+					
+				}
+				.rect1{
+					 .transform-origin(0% 0%);
+				}
+				.rect2{
+					
+				}
+				.rect3{
+					.transform-origin(0% 0%);
+				}
+			}
+		}
+	}
 }
 
 #content {
