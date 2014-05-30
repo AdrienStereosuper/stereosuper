@@ -102,7 +102,6 @@ $(document).ready(function() {
 		}else{
 			$('#navigation').addClass('open');
 			$('#content').addClass('open');
-			//TweenMax.to($("#svg-btn-responsive .group-rect"), 0.3, {x: "2px", ease:Cubic.easeInOut});
 			TweenMax.to($("#svg-btn-responsive .rect1"), 0.3, {delay:0.2, rotation: "45deg", x: "2px", y: "2px", ease:Cubic.easeInOut});
 			TweenMax.to($("#svg-btn-responsive .rect2"), 0.3, {delay:0.2, opacity: "0", ease:Cubic.easeInOut});
 			TweenMax.to($("#svg-btn-responsive .rect3"), 0.3, {delay:0.2, rotation: "-45deg", x: "-1px", y: "-1px", ease:Cubic.easeInOut});
