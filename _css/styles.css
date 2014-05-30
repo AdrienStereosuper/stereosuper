@@ -356,9 +356,6 @@ ul#menu ul.sub3 {
   display: block;
   margin-top: 0.4em;
 }
-/* @end */
-/* @group Social */
-/**** SOCIAL ****/
 #address ul#social li {
   display: inline;
   list-style: none;
@@ -453,6 +450,16 @@ object#flashmovie {
   margin-top: 5px;
   width: 620px;
 }
+.home p {
+  margin: 0 0 0 146px;
+  padding: 5px 15px;
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  line-height: 1em;
+  letter-spacing: 0.03em;
+  -webkit-text-size-adjust: none;
+}
 /*.home h2 span {
 	background: url('../_images/_home/finisLesSitesMononuls.gif') no-repeat top right;
 	display: block;
@@ -466,16 +473,6 @@ object#flashmovie {
   display: inline;
   padding: 2px 15px 1px;
   line-height: 1.4em;
-}
-.home p {
-  margin: 0 0 0 146px;
-  padding: 5px 15px;
-  display: inline-block;
-  background: #000;
-  color: #fff;
-  line-height: 1em;
-  letter-spacing: 0.03em;
-  -webkit-text-size-adjust: none;
 }
 #footerMentions {
   position: absolute;
