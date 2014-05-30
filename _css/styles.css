@@ -54,14 +54,14 @@ a:hover span {
 }
 a:active,
 a:active span {
-  color: #00657f;
-  border-bottom: 1px solid #00657f;
-  text-decoration: line-through;
+  /*color : #00657f;
+		border-bottom: 1px solid #00657f;
+		text-decoration: line-through;*/
 }
 a:active {
-  color: #00657f;
-  border-bottom: 1px solid #00657f;
-  margin: 1px 0 0 1px;
+  /*color : #00657f;
+		border-bottom: 1px solid #00657f;
+		margin: 1px 0 0 1px;*/
 }
 h1 {
   margin: 0;
@@ -184,15 +184,15 @@ a#stereosuper:active span { background-position: 1px -69px }*/
 /* @group Nav */
 /* @group Menu */
 /**** MENU ****/
-.ie6 ul#menu {
-  display: none;
-}
 ul#menu {
   display: inline;
   padding: 9px 32px 0 15px;
   float: left;
   text-transform: uppercase;
   background: #000;
+}
+.ie6 ul#menu {
+  display: none;
 }
 ul#menu a {
   border: 0 none;
@@ -203,8 +203,12 @@ ul#menu li {
   position: relative;
   padding: 0;
 }
-.ie7 ul#menu li.sub {
-  margin-top: 17px;
+.lt-ie7 ul#menu li,
+.lt-ie7 ul#menu li a {
+  margin: 0.1em 0 0 0;
+  padding: 0;
+  height: 16px;
+  line-height: 16px;
 }
 ul#menu li.sub {
   display: inline;
@@ -213,12 +217,8 @@ ul#menu li.sub {
   margin-top: 21px;
   background: none;
 }
-.ie7 ul#menu li.sub li,
-.ie7 ul#menu li.sub li a {
-  margin: 0.1em 0 0 0;
-  padding: 0;
-  height: 16px;
-  line-height: 16px;
+.lt-ie7 ul#menu li.sub {
+  margin-top: 17px;
 }
 ul#menu li a {
   font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
@@ -234,7 +234,7 @@ ul#menu li a {
 ul#menu li a:hover {
   color: #01b4ff;
 }
-ul#menu li.blueDash {
+ul#menu li a ul#menu li.blueDash {
   padding-left: 8px;
 }
 ul#menu ul.sub1 {

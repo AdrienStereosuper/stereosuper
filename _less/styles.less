@@ -46,24 +46,27 @@ a span {
     border-bottom: 1px solid #01b4ff;
     outline: none;
 }
-a { margin: 0 1px 1px 0 }
-a:hover,
-a:hover span {
-    color: #fff;
-    border-bottom: 1px solid #fff;
+a { 
+	margin: 0 1px 1px 0;
+	&:hover, &:hover span{
+		color: #fff;
+		border-bottom: 1px solid #fff;
+	}
+	&:active, &:active span{
+		/*color : #00657f;
+		border-bottom: 1px solid #00657f;
+		text-decoration: line-through;*/
+	}
+	&:active{
+		/*color : #00657f;
+		border-bottom: 1px solid #00657f;
+		margin: 1px 0 0 1px;*/
+	}
 }
-a:active,
-a:active span {
-    color : #00657f;
-    border-bottom: 1px solid #00657f;
-    text-decoration: line-through;
+
+h1 { 
+	margin: 0;
 }
-a:active {
-    color : #00657f;
-    border-bottom: 1px solid #00657f;
-    margin: 1px 0 0 1px;
-}
-h1 { margin: 0 }
 /* custom selection colors */
 ::-moz-selection {
     color: #013b47;
@@ -179,51 +182,59 @@ a#stereosuper:active span { background-position: 1px -69px }*/
 /* @group Nav */
 /* @group Menu */
 /**** MENU ****/
-.ie6 ul#menu { display: none }
 ul#menu {
     display: inline;
     padding: 9px 32px 0 15px;
     float: left;
     text-transform: uppercase;
     background: #000;
-}
-ul#menu a { border: 0 none }
-ul#menu li {
-    margin: 0.1em 0 0.2em;
-    list-style: none;
-    position: relative;
-    padding: 0;
-}
-.ie7 ul#menu li.sub { margin-top: 17px }
-ul#menu li.sub {
-    display: inline;
-    float: left;
-    margin-bottom: 25px;
-    margin-top: 21px;
-    background: none;
-}
-.ie7 ul#menu li.sub li,
-.ie7 ul#menu li.sub li a {
-    margin: 0.1em 0 0 0;
-    padding: 0;
-    height: 16px;
-    line-height: 16px;
-}
-ul#menu li a {
-	font-family:'Gotham SSm A', 'Gotham SSm B', sans-serif;
-	font-size: 0.8em;
-	font-weight:300;
-	font-style:normal;
-    display: block;
-    /*line-height: 16px;*/
-    margin: 0;
-    padding: 0 0 0 5px;
-    color: #fff;
+    .ie6 &{
+    	display: none 
+    }
+    a { 
+    	border: 0 none 
+    }
+    li {
+        margin: 0.1em 0 0.2em;
+        list-style: none;
+        position: relative;
+        padding: 0;
+        .lt-ie7 &, .lt-ie7 & a{
+        	margin: 0.1em 0 0 0;
+        	padding: 0;
+        	height: 16px;
+        	line-height: 16px;
+        }
+        &.sub{
+            display: inline;
+            float: left;
+            margin-bottom: 25px;
+            margin-top: 21px;
+            background: none;
+            .lt-ie7 &{
+            	margin-top: 17px 
+            }
+        }
+        a {
+        	font-family:'Gotham SSm A', 'Gotham SSm B', sans-serif;
+        	font-size: 0.8em;
+        	font-weight:300;
+        	font-style:normal;
+            display: block;
+            /*line-height: 16px;*/
+            margin: 0;
+            padding: 0 0 0 5px;
+            color: #fff;
+            &:hover{
+				color: #01b4ff;
+            }
+        }
+    }
 }
 
-ul#menu li a:hover {
-	color: #01b4ff;
-}
+
+
+ul#menu li a
 ul#menu li.blueDash { padding-left: 8px }
 ul#menu ul.sub1 { width: 135px }
 ul#menu ul.sub2 { width: 135px }
