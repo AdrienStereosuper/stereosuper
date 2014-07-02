@@ -2018,6 +2018,13 @@ a#sb-nav-close:hover {
   }
 }
 @media (max-width: 480px) {
+  body {
+    min-height: 700px;
+  }
+  #homeBGop,
+  #nextBGop {
+    background-position: -880px 100%;
+  }
   .home h2 {
     font-size: 1.6em;
   }
