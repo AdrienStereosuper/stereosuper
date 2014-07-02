@@ -127,6 +127,9 @@ ul#menu-responsive {
   margin: 30px 0 0 0;
   padding: 0;
 }
+.no-touch ul#menu-responsive {
+  display: none;
+}
 ul#menu-responsive li {
   display: block;
   width: 90%;
