@@ -27,6 +27,8 @@ var timerDiaporama = 2000;
 //
 $(document).ready(function() {
 	
+	$("body").append("<a href='accueil.html' title='retourner à la page d\'accueil' id='stereosuper-responsive'></a>");
+	
     // external links
     $('a').each(function() {
         if ($(this).attr("rel") == "external") { $(this).attr("target", "_blank"); }
@@ -99,12 +101,14 @@ $(document).ready(function() {
 			TweenMax.to($("#svg-btn-responsive .rect1"), 0.3, {rotation: "0deg", x: "0", y: "0", ease:Cubic.easeInOut});
 			TweenMax.to($("#svg-btn-responsive .rect2"), 0.3, {opacity: "1", ease:Cubic.easeInOut});
 			TweenMax.to($("#svg-btn-responsive .rect3"), 0.3, {rotation: "0deg", x: "0", y: "0", ease:Cubic.easeInOut});
+			TweenMax.to($("a#stereosuper-responsive"), 0.3, {x: "0", ease:Cubic.easeInOut});
 		}else{
 			$('#navigation').addClass('open');
 			$('#content').addClass('open');
 			TweenMax.to($("#svg-btn-responsive .rect1"), 0.3, {delay:0.2, rotation: "45deg", x: "2px", y: "2px", ease:Cubic.easeInOut});
 			TweenMax.to($("#svg-btn-responsive .rect2"), 0.3, {delay:0.2, opacity: "0", ease:Cubic.easeInOut});
 			TweenMax.to($("#svg-btn-responsive .rect3"), 0.3, {delay:0.2, rotation: "-45deg", x: "-1px", y: "-1px", ease:Cubic.easeInOut});
+			TweenMax.to($("a#stereosuper-responsive"), 0.3, {x: "-100px", ease:Cubic.easeInOut});
 		}
 	});
 	

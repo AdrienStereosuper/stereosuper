@@ -271,6 +271,18 @@ a#stereosuper {
     }
 }
 
+a#stereosuper-responsive{
+	display: none;
+	height: 26px;
+	width: 55px;
+	margin: 18px 0 0 18px;
+	padding: 0;
+	position: relative;
+	background: url('../_images/logo-stereosuper.png') no-repeat top center;
+	border: none;
+	z-index: 2;
+}
+
 /*a#stereosuper:hover span { background-position: 0 -210px }
 a#stereosuper:active span { background-position: 1px -69px }*/
 /* @end */
@@ -1780,6 +1792,9 @@ a#sb-nav-close:hover { background-position: 0 -47px }
 		-webkit-transform: translate3d(100%, 0, 0);
 		transform: translate3d(100%, 0, 0);
 	}
+	a#stereosuper-responsive{
+		display: block;
+	}
 	ul#menu{
 		float: none;
 		li.sub{
@@ -1888,3 +1903,18 @@ a#sb-nav-close:hover { background-position: 0 -47px }
 		font-size: 1em;
 	}
 }
+
+/* @group retina */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+	a#stereosuper{
+		background-image: url('../_images/logo-stereosuper@2x.png');
+		.background-size(55px 26px);
+	}
+	a#stereosuper-responsive{
+		background-image: url('../_images/logo-stereosuper@2x.png');
+		.background-size(55px 26px);
+	}
+}
+
+/* @end */
