@@ -164,7 +164,7 @@ ul#menu-responsive li a span {
   text-decoration: none;
   border: none;
   position: absolute;
-  font-size: 1.8em;
+  font-size: 2.4em;
   top: 0;
   left: 0;
   display: block;
@@ -174,7 +174,7 @@ ul#menu-responsive li a span {
   text-align: center;
 }
 ul#menu-responsive li a span.icon-tel {
-  font-size: 3.3em;
+  font-size: 3.5em;
 }
 #navigation-responsive {
   background: #000;
