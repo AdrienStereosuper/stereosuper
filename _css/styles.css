@@ -2064,10 +2064,14 @@ a#sb-nav-close:hover {
     background-position: -880px 100%;
   }
   .home h2 {
-    font-size: 1.6em;
+    font-size: 1.5em;
+    width: 96%;
+    margin: 65px 2% 0 2%;
   }
   .home p {
     font-size: 1em;
+    width: 96%;
+    margin: 65px 2% 0 2%;
   }
 }
 /* @group retina */
