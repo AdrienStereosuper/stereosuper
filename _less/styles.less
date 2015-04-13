@@ -259,11 +259,13 @@ a#stereosuper {
     position: relative;
     float: left;
     border: 0 none;
-    background: url('../_images/logo-stereosuper.png') no-repeat top center;
     font-family:'Gotham SSm A', 'Gotham SSm B', sans-serif;
     font-size: 0.28em;
     font-weight:200;
     color: #fff;
+    .no-svg &{
+        background: url('../_images/logo-stereosuper.png') no-repeat top center;
+    }
     strong{
     	font-weight:500;
     	color: #01B4FE;
@@ -283,6 +285,72 @@ a#stereosuper-responsive{
 	background: url('../_images/logo-stereosuper.png') no-repeat 0 0;
 	border: none;
 	z-index: 2;
+}
+
+#bloc-svg{
+  display: block;
+  height: 26px;
+  width: 75px;
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  border: 0;
+  .transform(translateX(-50%), translateY(-50%));
+  span{
+    border: 0;
+  }
+  .masque-gauche-svg, .masque-droite-svg{
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  #stereo-logo{
+    display: block;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top:0;
+    left:10px;
+    fill: #35b1e5;
+    z-index: 1;
+  }
+  #home-logo-gauche{
+    display: block;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top:0;
+    right:-71px;
+    fill: #fff;
+    z-index: 2;
+  }
+  #super-logo{
+    display: block;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top:0;
+    right:10px;
+    fill: #fff;
+    z-index: 1;
+  }
+  #home-logo-droite{
+    display: block;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top:0;
+    left:-71px;
+    fill: #fff;
+    z-index: 2;
+  }
+  .home-icon{
+    fill: #000;
+    //.transform-origin(50% 50%);
+  }
 }
 
 /*a#stereosuper:hover span { background-position: 0 -210px }
